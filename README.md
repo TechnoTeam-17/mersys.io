@@ -1,6 +1,6 @@
 # mersys.io_Projesi
 
-Techno Study Batch 4, Group 17, Friday Project / date 13-12-2023
+Techno Study Batch 4, Group 17, Friday Project / date 13-10-2023
 
 In this project we use JAVA and Test Tools.
 

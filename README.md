@@ -24,7 +24,6 @@ Domain: https://test.mersys.io/
 - Omer Al- Tester (xfinaldest@gmail.com)
 - Sokol Rrustemi- Tester (sokolrrustemi@gmail.com) 
    
-
 Getting Started
 ---------------
 
@@ -69,23 +68,49 @@ commons-io:commons-io:2.11.0
 # Right click to Main.java
 Run 'Main'
 
- 
 ```
-
 List of Dependencies
 ----------------
 
-| Package                 | Description                         |
-|-------------------------|-------------------------------------|
-| Cucumber                | Next Generation Testing Tool.       |
-| Selenium                | Browser Automation Framework.       |
-| cucumber-Testng         | Browser Automation Framework.       |
-| TestNG                  | Browser Automation Framework.       |
-| slf4j                   | The Simple Logging Facade for Java. | 
-| slf4j-beta2             | The Simple Logging Facade for Java. |
-| cucumber7-adapter       | Aventstack Library                  |
-| commons-lang3           | The Apache Commons IO library       |
-| commons.io              | The Apache Commons IO library       |
+| Package      | Description                           |
+|--------------|---------------------------------------|
+| TestNG       | Next Generation Testing Tool.         |
+| Selenium     | Browser Automation Framework.         |
+| slf4j        | The Simple Logging Facade for Java.   |
+| commons.io   | The Apache Commons IO library.        |
+| cucumber     | Cucumber is a tool that supports BDD. |
+| grasshopper  | HTML & PDF Report tool.               |
+
+## File Structure
+```bash
+|-- src
+|   |-- main
+|       |-- java
+|       |-- resources
+|
+|   |-- test
+|       |-- java
+|           |-- FeatureFiles
+|               |-- Cucumber Feature Files
+|           |-- Pages
+|               |-- Locators, Page Object Model Files
+|           |-- Runners
+|               |-- CrossBrowserTest
+|               |-- CrossBrowserTest.xml
+|               |-- ExtentReport
+|           |-- StepDefinitions
+|               |-- Test Class Files
+|           |-- Utilities
+|               |-- Events
+|               |-- Hooks
+|               |-- WBA          
+|       |-- resources
+|       |-- results
+|           |-- reports*
+|           |-- gitignore
+|
+|-- gitignore
+|-- pom.xml
 
 ## Rules Of Pull Request
 - Update your codes from main branch before you pull request
@@ -96,6 +121,10 @@ List of Dependencies
 - Use ./screenshots folder for bug & facility report
 - Only work at your story
 - Don't add any scenario you want
+
+## License
+
+This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ### Wish you the best! 
 

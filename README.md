@@ -10,7 +10,7 @@
 
 Techno Study Batch 4, Group 17, Friday Project / date 13-10-2023
 
-In this project we use We use JAVA, TestNG, Cucumber, Gherkin and other JAVA Tools on this project.
+In this project we use JAVA, TestNG, Cucumber, Gherkin and other JAVA Tools on this project.
 
 Domain: https://test.mersys.io/
 
@@ -96,14 +96,14 @@ List of Dependencies
 |               |-- Locators, Page Object Model Files
 |           |-- Runners
 |               |-- CrossBrowserTest
-|               |-- CrossBrowserTest.xml
 |               |-- ExtentReport
 |           |-- StepDefinitions
 |               |-- Test Class Files
 |           |-- Utilities
 |               |-- Events
 |               |-- Hooks
-|               |-- WBA          
+|               |-- WBA
+|           |-- XML
 |       |-- resources
 |       |-- results
 |           |-- reports*

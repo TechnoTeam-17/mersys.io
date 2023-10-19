@@ -6,10 +6,11 @@ public class _11_ParametrelerAyariAltindaIndirimleriDuzenlemeSteps {
 
     @Given("User accesses the {string} page")
     public void user_accesses_the_page(String string) {
+        System.out.println("hello");
 
 
     }
-    @When("the User clicks on the {string} tab")
+    @When(" the User clicks on the {string} tab")
     public void the_user_clicks_on_the_tab(String string) {
 
 

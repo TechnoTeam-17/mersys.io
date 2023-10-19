@@ -16,20 +16,12 @@ public class _04_AdminPanelineYeniAlanlarEklemeSteps {
 
     }
     @When("add a Field")
-    public void add_a_field() {
-
-    }
+    public void add_a_field() {lc.myClick(lc.Setup); }
     @When("edit a Field")
-    public void edit_a_field() {
-
-    }
+    public void edit_a_field() {lc.myClick(lc.addBtn); }
     @When("delete a Field")
-    public void delete_a_field() {
-
-    }
+    public void delete_a_field() {lc.myClick(lc.addBtn); }
     @When("User should delete successfully")
     public void user_should_delete_successfully() {
-
-    }
-
+        lc.verifyContainsText(lc.Fields, "successfully");}
 }

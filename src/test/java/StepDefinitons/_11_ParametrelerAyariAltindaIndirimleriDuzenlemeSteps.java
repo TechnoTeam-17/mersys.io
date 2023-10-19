@@ -6,7 +6,7 @@ public class _11_ParametrelerAyariAltindaIndirimleriDuzenlemeSteps {
 
     @Given("User accesses the {string} page")
     public void user_accesses_the_page(String string) {
-        System.out.println("hello");
+
 
 
     }

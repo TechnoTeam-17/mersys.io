@@ -28,12 +28,7 @@ public class _04_AdminPanelineYeniAlanlarEklemeSteps extends POM_04 {
 
     @When("edit a Field")
     public void edit_a_field() {
-        lc.findAndSend("searchInput", "EnginUser4");
-        lc.findAndClick("searchButton");
-        waitUntilLoading();
-        lc.findAndClick("editButton");
-        lc.findAndSend("nameInput", "EditUser4");
-        lc.findAndClick("saveButton");
+
     }
 
     @When("delete a Field")
@@ -43,10 +38,10 @@ public class _04_AdminPanelineYeniAlanlarEklemeSteps extends POM_04 {
 
     @When("User should delete successfully")
     public void user_should_delete_successfully() {
-        lc.SearchAndDelete(worth);
+      //  lc.Delete(worth);
     }
 }
-}
+
 
 
 

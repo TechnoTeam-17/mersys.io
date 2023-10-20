@@ -17,9 +17,17 @@ public class POM_04 extends Events {
     public WebElement Setup;
     @FindBy(xpath="//span[@class='nav-link-title ng-tns-c3380182179-7 ng-star-inserted']")
     public WebElement Parameters;
-    @FindBy(xpath="//span[@class='//span[@class='nav-link-title ng-star-inserted']']")
+    @FindBy(xpath="//span[@class='nav-link-title ng-star-inserted']']")
     public WebElement Fields;
 
+    @FindBy(xpath="//span[@class='']']")
+    public WebElement addBtn;
+
+    @FindBy(xpath="//div[@class='mat-form-field-infix ng-tns-c2794762957-55']']")
+    public WebElement name;
+
+    @FindBy(xpath="//span[@class='//span[@class='']']")
+    public WebElement speichern;
 
 
 }

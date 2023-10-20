@@ -21,10 +21,9 @@ public class _04_AdminPanelineYeniAlanlarEklemeSteps extends POM_04 {
 
     @When("Create a new Field")
     public void create_a_new_field() {
-        lc.myClick("fieldsAddBtn");
-        lc.findAndSend("nameInput", "EnginUser4");
-        lc.findAndSend("codeInput", "171717");
-        lc.myClick("saveButton");
+        lc.myClick(lc.addBtn);
+        lc.mySendKeys(lc.name, "Middle Europa");
+        lc.myClick(lc.speichern);
     }
 
     @When("edit a Field")

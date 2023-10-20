@@ -1,4 +1,6 @@
 package Pages;
 
-public class POM_03 {
+import Utilities.Events;
+
+public class POM_03 extends Events {
 }

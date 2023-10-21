@@ -13,4 +13,4 @@ Feature: Document Types
     And user edit document
     Then delete document
     Then document should be deleted
-
+    Then delete a Field

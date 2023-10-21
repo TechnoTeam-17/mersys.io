@@ -1,16 +1,14 @@
 package StepDefinitons;
 
-import Pages._00_LoginPOM;
-import Utilities.Events;
+import Pages.POM_00;
 import Utilities.WBA;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 
 public class _00_LoginSteps{
 
-        _00_LoginPOM lc=new _00_LoginPOM();
+        POM_00 lc=new POM_00();
 
 
         @Given("Navigate to campus")

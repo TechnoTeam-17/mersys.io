@@ -1,8 +1,16 @@
+![Maven Central](https://img.shields.io/maven-central/v/org.seleniumhq.selenium/selenium-java?versionSuffix=4.11.0&label=Selenium)
+![Maven Central](https://img.shields.io/maven-central/v/io.cucumber/cucumber-java?versionSuffix=7.9.0&label=Cucumber)
+![Maven Central](https://img.shields.io/maven-central/v/org.testng/testng?versionSuffix=7.7.0&label=TestNG)
+![Maven Central](https://img.shields.io/maven-central/v/org.slf4j/slf4j-api?versionSuffix=1.8.0-beta2&label=Slf4j)
+![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-lang3?versionSuffix=3.12.0&label=Apache%20Commons)
+![Maven Central](https://img.shields.io/maven-central/v/tech.grasshopper/extentreports-cucumber7-adapter?versionSuffix=1.9.2&label=Grashopper)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
 # mersys.io_Projesi
 
 Techno Study Batch 4, Group 17, Friday Project / date 13-10-2023
 
-In this project we use JAVA and Test Tools.
+In this project we use JAVA, TestNG, Cucumber, Gherkin and other JAVA Tools on this project.
 
 Domain: https://test.mersys.io/
 
@@ -16,7 +24,6 @@ Domain: https://test.mersys.io/
 - Omer Al- Tester (xfinaldest@gmail.com)
 - Sokol Rrustemi- Tester (sokolrrustemi@gmail.com) 
    
-
 Getting Started
 ---------------
 
@@ -61,23 +68,49 @@ commons-io:commons-io:2.11.0
 # Right click to Main.java
 Run 'Main'
 
- 
 ```
-
 List of Dependencies
 ----------------
 
-| Package                 | Description                         |
-|-------------------------|-------------------------------------|
-| Cucumber                | Next Generation Testing Tool.       |
-| Selenium                | Browser Automation Framework.       |
-| cucumber-Testng         | Browser Automation Framework.       |
-| TestNG                  | Browser Automation Framework.       |
-| slf4j                   | The Simple Logging Facade for Java. | 
-| slf4j-beta2             | The Simple Logging Facade for Java. |
-| cucumber7-adapter       | Aventstack Library                  |
-| commons-lang3           | The Apache Commons IO library       |
-| commons.io              | The Apache Commons IO library       |
+| Package      | Description                           |
+|--------------|---------------------------------------|
+| TestNG       | Next Generation Testing Tool.         |
+| Selenium     | Browser Automation Framework.         |
+| slf4j        | The Simple Logging Facade for Java.   |
+| commons.io   | The Apache Commons IO library.        |
+| cucumber     | Cucumber is a tool that supports BDD. |
+| grasshopper  | HTML & PDF Report tool.               |
+
+## File Structure
+```bash
+|-- src
+|   |-- main
+|       |-- java
+|       |-- resources
+|
+|   |-- test
+|       |-- java
+|           |-- FeatureFiles
+|               |-- Cucumber Feature Files
+|           |-- Pages
+|               |-- Locators, Page Object Model Files
+|           |-- Runners
+|               |-- CrossBrowserTest
+|               |-- ExtentReport
+|           |-- StepDefinitions
+|               |-- Test Class Files
+|           |-- Utilities
+|               |-- Events
+|               |-- Hooks
+|               |-- WBA
+|           |-- XML
+|       |-- resources
+|       |-- results
+|           |-- reports*
+|           |-- gitignore
+|
+|-- gitignore
+|-- pom.xml
 
 ## Rules Of Pull Request
 - Update your codes from main branch before you pull request
@@ -88,6 +121,10 @@ List of Dependencies
 - Use ./screenshots folder for bug & facility report
 - Only work at your story
 - Don't add any scenario you want
+
+## License
+
+This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ### Wish you the best! 
 

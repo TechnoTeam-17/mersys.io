@@ -28,14 +28,26 @@ public class POM_04 extends Events {
     @FindBy(xpath="//ms-save-button/button")
     public WebElement SaveBtn;
 
-    @FindBy(xpath="")
+    @FindBy(css = "ms-delete-button")
     public WebElement deletBtn;
 
     @FindBy(xpath="//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 
+    public WebElement getWebElement(String strElement){
+        switch (strElement){
+            case "Setup" : return this.Setup;
+            case "Parameters" : return this.Parameters;
+            case "Fields" : return this.Fields;
+            case "addBtn" : return this.addBtn;
+            case "Name" : return this.Name;
+            case "SaveBtn" : return this.SaveBtn;
+            case "deletBtn" : return this.deletBtn;
+            case "successMessage" : return this.successMessage;
+            default: return null;
+        }
 }
-
+}
 
 
 

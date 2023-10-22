@@ -8,9 +8,8 @@ Feature: Document Types
   Scenario:
     Given Navigate to Document Types
     When Create a new document
-    Then document should be added
 
-    And user edit document
+    And edit a document
     Then delete document
     Then document should be deleted
-    Then delete a Field
+

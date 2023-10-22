@@ -17,8 +17,8 @@ public class _04_AddingNewFieldsToAdminPanel {
     @When("Create a new Field")
     public void create_a_new_field() {
         lc.myClick(lc.addBtn);
-        lc.mySendKeys(lc.name, "Middle Europa");
-        lc.myClick(lc.speichern);
+        lc.mySendKeys(lc.Name, "Middle Europa");
+        lc.myClick(lc.SaveBtn);
     }
 
     @When("edit a Field")
@@ -28,13 +28,19 @@ public class _04_AddingNewFieldsToAdminPanel {
 
     @When("delete a Field")
     public void delete_a_field() {
+       lc.myClick(lc.deletBtn);
 
     }
 
     @When("User should delete successfully")
-    public void user_should_delete_successfully() {
-        //  lc.Delete(worth);
+    public void user_should_delete_successfully() throws InterruptedException{
+         Thread.sleep(2000);
+          lc.verifyContainsText(lc.successMessage,"deleted");
     }
-}
+
+
+    }
+
+
 
 

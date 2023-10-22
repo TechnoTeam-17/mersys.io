@@ -19,15 +19,20 @@ public class POM_04 extends Events {
     @FindBy(xpath="//span[@class='nav-link-title ng-star-inserted']']")
     public WebElement Fields;
 
-    @FindBy(xpath="//span[@class='']']")
+    @FindBy(xpath="//*[@id=\"ms-table-0_buttons\"]/ms-table-toolbar/div/ms-add-button/div/button/span[3]")
     public WebElement addBtn;
 
     @FindBy(xpath="//div[@class='mat-form-field-infix ng-tns-c2794762957-55']']")
-    public WebElement name;
+    public WebElement Name;
 
-    @FindBy(xpath="//span[@class='//span[@class='']']")
-    public WebElement speichern;
+    @FindBy(xpath="//ms-save-button/button")
+    public WebElement SaveBtn;
 
+    @FindBy(xpath="")
+    public WebElement deletBtn;
+
+    @FindBy(xpath="//div[contains(text(),'successfully')]")
+    public WebElement successMessage;
 
 }
 

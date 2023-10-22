@@ -10,7 +10,6 @@ Feature: Setting up Position Categories
       When Create a new Category
       Then success message should be displayed
 
-      And user edit position category
-      Then delete position category
+      And user edit and delete position category
       Then success message should be displayed
 

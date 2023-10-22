@@ -6,9 +6,10 @@ Feature: Setting up Parameters Field
     Then User should login successfully
 
   Scenario:
-    Given Navigate to Set Up Categories
-    When Create new Fields
-    And add a Field
+    Given Navigate to Fields Page
+    When Create a new Field
+
     And edit a Field
     And delete a Field
     And User should delete successfully
+

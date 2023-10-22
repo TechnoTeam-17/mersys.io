@@ -17,7 +17,7 @@ public class _03_DocumentTypesManegment {
         lc.myClick(lc.Setup);
         lc.myClick(lc.Parameters);
         lc.myClick(lc.DocumentTypes);
-        WBA.getDriver().manage().window().maximize();
+
     }
     @When("Create a new document")
     public void create_a_new_document() {

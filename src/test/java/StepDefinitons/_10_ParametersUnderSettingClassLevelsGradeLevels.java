@@ -18,11 +18,11 @@ public class _10_ParametersUnderSettingClassLevelsGradeLevels {
     POM_10 lc=new POM_10();
 
 
-    String gradeNameStr = "techno17";
-    String shortNameStr = "techno";
-    String orderStr = "17";
-    String maxApplicationCountStr = "17";
-    String newGradeNameStr = "17";
+    String gradeName = "techno17";
+    String shortName = "techno";
+    String order = "17";
+    String maxApplicationCount = "17";
+    String newGradeName = "17";
 
     public WebDriverWait wait = new WebDriverWait(WBA.getDriver(), Duration.ofSeconds(20));
 
@@ -38,10 +38,10 @@ public class _10_ParametersUnderSettingClassLevelsGradeLevels {
     @And("the user adds a new grade level")
     public void theUserAddsANewGradeLevel() {
         lc.myClick(lc.addButton);
-        lc.mySendKeys(lc.name, gradeNameStr);
-        lc.mySendKeys(lc.shortName, shortNameStr);
-        lc.mySendKeys(lc.order, orderStr);
-        lc.mySendKeys(lc.maxApplicationCount, maxApplicationCountStr);
+        lc.mySendKeys(lc.name, gradeName);
+        lc.mySendKeys(lc.shortName, shortName);
+        lc.mySendKeys(lc.order, order);
+        lc.mySendKeys(lc.maxApplicationCount, maxApplicationCount);
         lc.myClick(lc.saveButton);
     }
 
@@ -55,12 +55,12 @@ public class _10_ParametersUnderSettingClassLevelsGradeLevels {
         List<WebElement> allNames = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody[@role='rowgroup']/tr/td[2]")));
 
         for (int i = 0; i <= allNames.size(); i++) {
-            if (allNames.get(i).getText().contains(gradeNameStr)) {
+            if (allNames.get(i).getText().contains(gradeName)) {
                 i++;
                 String editLocator = "(//tbody[@role='rowgroup']/tr/td[2]/following::td[5]/div/ms-edit-button)[" + i + "]";
                 WebElement gEdit = WBA.getDriver().findElement(By.xpath(editLocator));
                 gEdit.click();
-                lc.mySendKeys(lc.name, newGradeNameStr);
+                lc.mySendKeys(lc.name, newGradeName);
                 lc.myClick(lc.saveButton);
                 break;
             }
@@ -77,7 +77,7 @@ public class _10_ParametersUnderSettingClassLevelsGradeLevels {
         List<WebElement> allNames = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody[@role='rowgroup']/tr/td[2]")));
 
         for (int i = 0; i <= allNames.size(); i++) {
-            if (allNames.get(i).getText().contains(newGradeNameStr)) {
+            if (allNames.get(i).getText().contains(newGradeName)) {
                 i++;
                 String editLocator = "(//tbody[@role='rowgroup']/tr/td[2]/following::td[5]/div/ms-delete-button)[" + i + "]";
                 WebElement gEdit = WBA.getDriver().findElement(By.xpath(editLocator));

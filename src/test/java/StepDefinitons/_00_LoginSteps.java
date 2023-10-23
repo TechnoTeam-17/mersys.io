@@ -1,33 +1,35 @@
 package StepDefinitons;
 
 import Pages.POM_00;
+import Utilities.Excel;
 import Utilities.WBA;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import java.util.ArrayList;
+import java.util.List;
 
 public class _00_LoginSteps{
 
         POM_00 lc=new POM_00();
-
-
-        @Given("Navigate to campus")
-        public void navigateToCampus() {
-            WBA.getDriver().get("https://test.mersys.io/");
-            WBA.getDriver().manage().window().maximize();
+        @Given("Navigate to Campus")
+    public void navigateToCampus() {
+        WBA.getDriver().get("https://test.mersys.io/");
+    }
+    @When("Enter username and password click login button with ApachePOI")
+    public void enterUsernameAndPasswordClickLoginButtonWithApachePOI(DataTable dt) {
+        List<String> stringList = dt.asList(String.class);
+        ArrayList<ArrayList<String>> tablo = Excel.getData
+                ("src/test/java/StepDefinitons/TestMersys.io.xlsx", "Sheet1", 2);
+        for (ArrayList<String> satir : tablo){
+            lc.mySendKeys(lc.getWebElement(stringList.get(0)), satir.get(0));
+            lc.mySendKeys(lc.getWebElement(stringList.get(1)), satir.get(1));
         }
-
-        @When("Enter username and password and click login button")
-        public void enterUsernameAndPasswordAndClickLoginButton() {
-            lc.mySendKeys(lc.username,"username");
-            lc.mySendKeys(lc.password,"password");
-            lc.myClick(lc.loginButton);
-        }
-
-        @Then("User should login successfully")
-         public void userShouldLoginSuccessfully() {
-            lc.verifyContainsText(lc.schoolName, "Techno Study Intern School");
-         }
+        lc.myClick(lc.getWebElement(stringList.get(2)));
+    }
+    @Then("User should successfully")
+    public void userShouldSuccessfully() {
+        lc.verifyContainsText(lc.getWebElement("txtTechnoStudy"), "Techno Study");
+    }
 }
-
-

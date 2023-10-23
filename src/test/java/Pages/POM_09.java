@@ -5,6 +5,9 @@ import Utilities.WBA;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class POM_09 extends Events {
 
@@ -40,4 +43,13 @@ public class POM_09 extends Events {
     public WebElement delete;
     @FindBy(css = "[class='mdc-button mat-mdc-button mdc-button--raised mat-mdc-raised-button mat-accent mat-mdc-button-base']>[class='mdc-button__label']")
     public WebElement deleteEnd;
+
+    public static void wait(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    public WebDriverWait myWait = new WebDriverWait(WBA.getDriver(), Duration.ofSeconds(20));
 }

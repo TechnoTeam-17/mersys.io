@@ -10,6 +10,5 @@ Feature: Attestation Management
     When Create a new attestation
     Then success message should be displayed
 
-    And user edit attestation
-    Then delete attestation
+    And user edit and delete attestation
     Then success message should be displayed

@@ -2,10 +2,13 @@ package StepDefinitons;
 import Pages.POM_04;
 import Utilities.WBA;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 
 public class _04_AddingNewFieldsToAdminPanel {
 
     POM_04 lc= new POM_04();
+    Actions actions = new Actions(WBA.getDriver());
     @Given("Navigate to Fields Page")
     public void navigate_to_fields_page() {
         lc.myClick(lc.Setup);
@@ -18,6 +21,9 @@ public class _04_AddingNewFieldsToAdminPanel {
     public void create_a_new_field() {
         lc.myClick(lc.addBtn);
         lc.mySendKeys(lc.Name, "Middle Europa");
+        Action aksiyon = actions.moveToElement(lc.NumberBtn).build();
+        aksiyon.perform();
+        lc.myClick(lc.NumberBtn);
         lc.myClick(lc.SaveBtn);
     }
 

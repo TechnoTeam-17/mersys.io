@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class Events {
 
-       WebDriverWait wait=new WebDriverWait(WBA.getDriver(), Duration.ofSeconds(20));
+       public WebDriverWait wait=new WebDriverWait(WBA.getDriver(), Duration.ofSeconds(20));
 
     //This method is designed for clicking on web elements, typically buttons, links,
     // or any clickable elements, in a Selenium-based automation or testing context.
@@ -59,4 +59,3 @@ public class Events {
     }
 
 }
-

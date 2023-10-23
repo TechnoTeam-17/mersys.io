@@ -16,13 +16,12 @@ import java.util.List;
 public class _10_ParametersUnderSettingClassLevelsGradeLevels {
 
     POM_10 lc=new POM_10();
-
-
-    String gradeName = "techno17";
-    String shortName = "techno";
+    
+    String gradeName = "Team17";
+    String shortName = "Team";
     String order = "17";
     String maxApplicationCount = "17";
-    String newGradeName = "17";
+    String newGradeName = "Team16";
 
     public WebDriverWait wait = new WebDriverWait(WBA.getDriver(), Duration.ofSeconds(20));
 

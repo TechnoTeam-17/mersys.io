@@ -5,14 +5,27 @@ Feature: Grade Levels
     When Enter username and password and click login button
     Then User should login successfully
 
-  Scenario: User should be able to create new Grade Level.
-    When a new grade level is created
-    Then the grade level should appear in the list
+  Scenario: The user add Grade Levels
+    When the user navigates to grade levels
+      | setup        |
+      | parameters   |
+      | grade levels |
+    And the user adds a new grade level
+    Then the grade level should be added successfully
 
-  Scenario: User should be able to edit Grade Levels so user can make changes.
-    When an existing grade level edited
-    Then the grade level should have changed
+  Scenario: The user edit Grade Levels
+    When the user navigates to grade levels
+      | setup        |
+      | parameters   |
+      | grade levels |
+    And the user edits a grade level
+    Then the grade level should be edited successfully
 
-  Scenario: User should be able to delete Grade Levels.
-    When an existing grade level deleted
-    Then the grade level should be removed from the list
+  Scenario: The user delete Grade Levels
+    When the user navigates to grade levels
+      | setup        |
+      | parameters   |
+      | grade levels |
+    And the user deletes a grade level
+    Then the grade level should be deleted successfully
+

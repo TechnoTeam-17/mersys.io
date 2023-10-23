@@ -14,3 +14,4 @@ Feature:BankAccounts
     When Account will be inactive
     Then the bank account should be deleted and removed from the list
 
+

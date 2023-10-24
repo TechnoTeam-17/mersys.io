@@ -24,7 +24,7 @@ public class POM_08 extends Events {
     @FindBy(xpath="//*[@id=\"ms-table-0_buttons\"]/ms-table-toolbar/div/ms-add-button/div/button/span[3]")
     public WebElement addButton;
 
-    -----
+
    // @FindBy(xpath="//ms-text-field[@formcontrolname='name']//input")
    @FindBy(id="ms-text-field-6")
     public WebElement nameInput;
@@ -40,7 +40,7 @@ public class POM_08 extends Events {
     public WebElement saveButton;
     @FindBy(xpath="//div[contains(text(),'successfully')]")
     public WebElement successMessage;
-    ---
+
 
 
 

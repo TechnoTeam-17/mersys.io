@@ -2,18 +2,16 @@
 package StepDefinitons;
 
 import Pages.POM_03;
-import Utilities.Events;
-import Utilities.WBA;
+import Utilities.*;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class _03_DocumentTypesManegment extends POM_03 {
 
     POM_03 lc = new POM_03();
 
-    @Given("Navigate to Document Types")
+        @Given("Navigate to Document Types")
     public void navigate_to_document_types() {
         lc.myClick(lc.Setup);
         lc.myClick(lc.Parameters);

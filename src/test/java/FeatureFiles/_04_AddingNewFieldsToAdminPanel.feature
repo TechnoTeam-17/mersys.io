@@ -10,6 +10,6 @@ Feature: Setting up Parameters Field
     When Create a new Field
 
     And edit a Field
-    And delete a Field
-    And User should delete successfully
+    Then delete a Field
+    Then User should delete successfully
 

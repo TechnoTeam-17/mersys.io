@@ -17,6 +17,7 @@ public class Events {
     //This method is designed for clicking on web elements, typically buttons, links,
     // or any clickable elements, in a Selenium-based automation or testing context.
     public void myClick(WebElement element){
+        wait.until(ExpectedConditions.visibilityOf(element));
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         element.click();

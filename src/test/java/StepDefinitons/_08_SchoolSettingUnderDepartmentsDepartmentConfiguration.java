@@ -73,6 +73,7 @@ public class _08_SchoolSettingUnderDepartmentsDepartmentConfiguration {
 
     @And("save all info")
     public void saveAllInfo() {
+        lc.myClick(lc.saveButton);
     }
 
     @Then("User edit as name {string}  in School Department")
@@ -87,5 +88,10 @@ public class _08_SchoolSettingUnderDepartmentsDepartmentConfiguration {
     public void deleteAsNameInSchoolDepartment(String arg0) {
     }
 
+    @Then("Click to addbutton{int}")
+    public void clickToAddbutton(int arg0) {
+
+        lc.myJsClick(lc.addButton2);
     }
+}
 

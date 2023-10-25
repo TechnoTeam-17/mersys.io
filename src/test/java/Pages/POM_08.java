@@ -39,6 +39,8 @@ public class POM_08 extends Events {
 
     @FindBy(xpath="//span[text()='Add']")
     public WebElement addButton;
+    @FindBy(xpath="(//span[text()='Add'])")
+    public WebElement addButton2;
 
     @FindBy(xpath="//span[text()='Department Parameters']")
     public WebElement DepartmantsP;
@@ -75,6 +77,10 @@ public class POM_08 extends Events {
                 return this.code;
             case "Shortname":
                 return this.Shortname;
+            case "key":
+                return this.key;
+                case "value":
+                return this.value;
         }
         return null;
     }

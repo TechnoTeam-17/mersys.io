@@ -25,15 +25,15 @@ Feature: School Functionality
       | Shortname | omr345 |
       | name      | Sci18 |
 
-    Then Click to addbutton
+   Then Click to addbutton2
 
 
-    And add the keys in Department Parameters
-      | key   | afre |
-      | value | 7    |
-
-  ##  And save all info
-##
+   And add the keys in Department Parameters
+     | key   | afre |
+     | value | 7    |
+    Then Click to addbutton2
+    And save all info
+##   (Bug oldugu icin diger basamaklar beklemede)
   ##  Then User edit as name "tech1"  in School Department
   ##    | nameInput | tech2 |
   ##    | code      | omr4  |

@@ -1,9 +1,13 @@
 Feature: Setting up Parameters Field
 
   Background:
-    Given Navigate to campus
-    When Enter username and password and click login button
-    Then User should login successfully
+
+    Given Navigate to Campus
+    When Enter username and password click login button with ApachePOI
+      | username    |
+      | password    |
+      | loginButton |
+    Then User should successfully
 
   Scenario:
     Given Navigate to Fields Page

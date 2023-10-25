@@ -9,8 +9,6 @@ Feature: Creating Position under HR
     Then User should successfully
 
 
-
-
   Scenario: Creating Position under HR
     When Navigates to grade levels
       | humanresource|

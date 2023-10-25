@@ -17,6 +17,7 @@ public class POM_07 extends Events {
     public WebElement Locations;
     @FindBy(xpath="//*[@id='ms-table-0_buttons']/ms-table-toolbar/div/ms-add-button/div/button/span[3]")
     public WebElement addButton;
+
     @FindBy(css="[data-placeholder='Name']")
     public WebElement name;
     @FindBy(css="[data-placeholder='Short Name']")

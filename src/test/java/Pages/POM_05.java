@@ -16,7 +16,7 @@ public class POM_05 extends Events {
     @FindBy(xpath = "//span[text()='Human Resources']")
     public WebElement humanResource;
 
-    @FindBy(xpath = "//span[text()='Setup']")
+    @FindBy(xpath = "(//span[text()='Setup'])[3]")
     public WebElement setupUnderHR;
 
     @FindBy(xpath = "//span[text()='Positions']")

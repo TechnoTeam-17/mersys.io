@@ -14,7 +14,7 @@ public class _05_CreatingPositionUnderHR {
     POM_05 lc = new POM_05();
 
 
-    @When("Navigates to grade levels")
+    @When("Navigates to HR")
     public void navigatesToGradeLevels(DataTable links) {
         List<String> strLinkList = links.asList(String.class);
         for (int i = 0; i < strLinkList.size(); i++) {

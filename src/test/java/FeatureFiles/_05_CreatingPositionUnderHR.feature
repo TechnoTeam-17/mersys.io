@@ -10,10 +10,10 @@ Feature: Creating Position under HR
 
 
   Scenario: Creating Position under HR
-    When Navigates to grade levels
-      | humanresource|
-      | setup   |
-      | position |
+    When Navigates to HR
+      | humanResource|
+      | setupUnderHR   |
+      | positionUnderHR |
     And the user add a new position
     Then a new position should be added successfully
 

@@ -23,14 +23,14 @@ Feature: School Location Functionality
      | capacity | 9   |
     And choose location_type is Laboratory
    And save locations info
-#
+
   Then edit in Locations
-#
+
   And User must be able to enable and disable Partitions
-#
-#   Then click delete as name "lab8"
-#
-#   And delete as name "lab8"  in Locations
+
+   Then click delete as name "lab8"
+
+  And delete as name "lab8"  in Locations
 
 
 

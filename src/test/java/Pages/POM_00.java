@@ -20,7 +20,8 @@ public class POM_00 extends Events {
     @FindBy(css="button[aria-label='LOGIN']")
     public WebElement loginButton;
     @FindBy(xpath = "(//span[text()='Techno Study Intern School'])")
-    public WebElement schoolName;
+    private WebElement txtTechnoStudy;
+
 
 
     public WebElement getWebElement(String strElement) {
@@ -31,6 +32,8 @@ public class POM_00 extends Events {
                 return this.password;
             case "loginButton":
                 return this.loginButton;
+            case "txtTechnoStudy":
+                return this.txtTechnoStudy;
         }
         return null;
     }

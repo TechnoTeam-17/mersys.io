@@ -23,7 +23,6 @@ public class _05_CreatingPositionUnderHR {
         }
     }
 
-
     @And("the user add a new position")
     public void theUserAddANewPosition() {
 

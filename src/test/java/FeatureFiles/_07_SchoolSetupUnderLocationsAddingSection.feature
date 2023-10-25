@@ -1,6 +1,5 @@
 Feature: School Location Functionality
 
-  @SmokeTest @Regression
   Background:
 
     Given Navigate to Campus
@@ -12,27 +11,26 @@ Feature: School Location Functionality
 
   Scenario: Manage school positions
 
-    Given Click on the element in Setup
-      | Setup        |
+    Given Click on the elements in Setup
+      | setup        |
       | School_Setup |
-      | Locations  |
+      | Locations    |
     And Click to addbutton
 
-    Then User create the keys in Locations
-      | name          | lab7      |
-      | shortname     | l7        |
-      | location Type | labrotary |
-      | capacity      | 12        |
+   Then User create the keys in Locations
+     | name     | lab7 |
+     | sname    | l7   |
+     | capacity | 9   |
+    And choose location_type is Laboratory
+    And save locations info
 
-    Then edit as name "lab7"  in Locations
-      | name          | lab8      |
-      | shortname     | l8        |
-      | location Type | labrotary |
-      | capacity      | 10        |
+   Then edit in Locations
 
-    Then click delete as name "lab8"
-    And check verification step
-    And delete as name "lab8"  in Locations
+   And User must be able to enable and disable Partitions
 
-    And User must be able to enable and disable Partitions
+   Then click delete as name "lab8"
+
+   And delete as name "lab8"  in Locations
+
+
 

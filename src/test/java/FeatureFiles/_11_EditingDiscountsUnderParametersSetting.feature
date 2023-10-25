@@ -1,8 +1,6 @@
 Feature:
 
   Background:
-
-
     Given Navigate to Campus
     When Enter username and password click login button with ApachePOI
       | username    |

@@ -31,9 +31,7 @@ public class _07_SchoolSetupUnderLocationsAddingSection {
 
     @And("Click to addbutton")
     public void clickToAddbutton() {
-
-
-        lc.myClick(lc.addButton);
+        lc.myJsClick(lc.addButton);
     }
 
     @Then("User create the keys in Locations")
@@ -79,7 +77,7 @@ public class _07_SchoolSetupUnderLocationsAddingSection {
 
     @And("User must be able to enable and disable Partitions")
     public void userMustBeAbleToEnableAndDisablePartitions() throws InterruptedException {
-      lc.myClick(lc.activate);
+      lc.myJsClick(lc.activate);
         Thread.sleep(3000);
 
     }

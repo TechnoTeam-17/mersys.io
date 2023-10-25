@@ -1,6 +1,5 @@
 package StepDefinitons;
 
-import Pages.POM_07;
 import Pages.POM_08;
 import Utilities.WBA;
 import io.cucumber.datatable.DataTable;
@@ -45,17 +44,17 @@ public class _08_SchoolSettingUnderDepartmentsDepartmentConfiguration {
      //   Action aksiyon= aksiyonlar.moveToElement(lc.name2).click().build();
      //   aksiyon.perform();
 
-       lc.mySendKeys(lc.Shortname,"ali");
-        lc.mySendKeys(lc.name,"veli");
-        Thread.sleep(3000);
-        lc.myClick(lc.addButton);
+   //   lc.mySendKeys(lc.Shortname,"ali");
+   //    lc.mySendKeys(lc.name,"veli");
+   //    Thread.sleep(3000);
+   //    lc.myClick(lc.addButton);
 
-    //    List<List<String>> items = value.asLists(String.class);
-    //    for (int i = 0; i < items.size(); i++) {
-    //        WebElement element = lc.getWebElement(items.get(i).get(0));
-    //        String word = items.get(i).get(1);
-    //        lc.mySendKeys(element, word);
-    //    }
+        List<List<String>> items = value.asLists(String.class);
+        for (int i = 0; i < items.size(); i++) {
+            WebElement element = lc.getWebElement(items.get(i).get(0));
+            String word = items.get(i).get(1);
+            lc.mySendKeys(element, word);
+        }
 
     }
 
@@ -88,8 +87,5 @@ public class _08_SchoolSettingUnderDepartmentsDepartmentConfiguration {
     public void deleteAsNameInSchoolDepartment(String arg0) {
     }
 
-    @Then("Click to addbutton")
-    public void clickToAddbutton() {
-        lc.myJsClick(lc.addButton);
     }
-}
+

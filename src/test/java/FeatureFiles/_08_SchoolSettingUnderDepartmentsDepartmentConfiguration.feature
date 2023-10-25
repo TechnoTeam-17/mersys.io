@@ -22,8 +22,9 @@ Feature: School Functionality
       | code | omr3  |
 
     And add the keys in Section
-      | name      | Sci18 |
       | Shortname | omr345 |
+      | name      | Sci18 |
+
     Then Click to addbutton
 
 

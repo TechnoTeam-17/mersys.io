@@ -27,7 +27,7 @@ public class Events {
 
     public void mySendKeys(WebElement element, String text){
         wait.until(ExpectedConditions.visibilityOf(element));
-
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         element.clear();
         element.sendKeys(text);

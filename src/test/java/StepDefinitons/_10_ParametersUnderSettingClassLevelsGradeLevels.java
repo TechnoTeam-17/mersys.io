@@ -91,5 +91,6 @@ public class _10_ParametersUnderSettingClassLevelsGradeLevels {
     public void theGradeLevelShouldBeDeletedSuccessfully() {
         lc.verifyContainsText(lc.successMessage, "success");
     }
+
 }
 

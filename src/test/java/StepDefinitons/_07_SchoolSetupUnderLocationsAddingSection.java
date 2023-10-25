@@ -31,6 +31,8 @@ public class _07_SchoolSetupUnderLocationsAddingSection {
 
     @And("Click to addbutton")
     public void clickToAddbutton() {
+
+
         lc.myClick(lc.addButton);
     }
 

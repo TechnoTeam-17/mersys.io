@@ -39,4 +39,7 @@ public class _05_CreatingPositionUnderHR {
     public void aNewPositionShouldBeAddedSuccessfully() {
         lc.verifyContainsText(lc.successMessage,"success");
     }
+
+
+
 }

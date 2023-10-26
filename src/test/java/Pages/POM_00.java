@@ -8,26 +8,34 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class POM_00 extends Events {
+
     public POM_00() {
         PageFactory.initElements(WBA.getDriver(), this);
     }
-    @FindBy(css="input[formcontrolname='username']")
-    private WebElement username;
-    @FindBy(css="input[formcontrolname='password']")
-    private WebElement password;
+
+    @FindBy(id="mat-input-0")
+    public WebElement username;
+    @FindBy(id="mat-input-1")
+    public WebElement password;
     @FindBy(css="button[aria-label='LOGIN']")
-    private WebElement loginButton;
-    @FindBy(css="span[class='mat-mdc-tooltip-trigger logo-text']")
+    public WebElement loginButton;
+    @FindBy(xpath = "(//span[text()='Techno Study Intern School'])")
     private WebElement txtTechnoStudy;
 
-    public WebElement getWebElement(String element){
-        switch (element){
-            case "username" : return this.username;
-            case "password" : return this.password;
-            case "loginButton" : return this.loginButton;
-            case "txtTechnoStudy" : return this.txtTechnoStudy;
+
+
+    public WebElement getWebElement(String strElement) {
+        switch (strElement) {
+            case "username":
+                return this.username;
+            case "password":
+                return this.password;
+            case "loginButton":
+                return this.loginButton;
+            case "txtTechnoStudy":
+                return this.txtTechnoStudy;
         }
         return null;
     }
-}
 
+}

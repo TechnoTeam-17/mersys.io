@@ -18,7 +18,7 @@ Domain: https://test.mersys.io/
 
 - Aygul Abilova - QA Lead  (abilovaygul@gmail.com)
 - Neslihan Terlemez - Tester ( terlemez.neslihan@gmail.com )
-- Alpaslan Alemdar - Tester  ( alpaslanalemdar@yandex.com)
+- Alpaslan Alemdar - Tester  ( alpaslanalemdar5406@hotmail.com)
 - Nergis Reçel - Tester (nergisrecel@hotmail.com)
 - Hakan Kılıç - Tester   (Aliyamnuveybam@gmail.com)
 - Omer Al- Tester (xfinaldest@gmail.com)

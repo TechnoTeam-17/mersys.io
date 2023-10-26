@@ -30,6 +30,8 @@ public class _03_DocumentTypesManegment extends POM_03 {
 
     @And("edit a document")
     public void user_edit_document() {
+        lc.mySendKeys(lc.searchInput,"Education");
+        lc.myClick(lc.searchButton);
         lc.myClick(lc.EditBtn);
         lc.mySendKeys(lc.Name, "Neslihan");
         lc.myClick(lc.SaveBtn);

@@ -26,21 +26,21 @@ public class WBA {
             threadBrowserName.set("chrome");
         }
 
-        if (threadDriver.get() == null) {
-            switch (threadBrowserName.get()) {
-                case "firefox":
-                    threadDriver.set(new FirefoxDriver());
-                    break;
-                case "safari":
-                    threadDriver.set(new SafariDriver());
-                    break;
-                case "edge":
-                    threadDriver.set(new EdgeDriver());
-                    break;
-                default:
-                    threadDriver.set(new ChromeDriver());
-            }
-        }
+//        if (threadDriver.get() == null) {
+//            switch (threadBrowserName.get()) {
+//                case "firefox":
+//                    threadDriver.set(new FirefoxDriver());
+//                    break;
+//                case "safari":
+//                    threadDriver.set(new SafariDriver());
+//                    break;
+//                case "edge":
+//                    threadDriver.set(new EdgeDriver());
+//                    break;
+//                default:
+//                    threadDriver.set(new ChromeDriver());
+//            }
+      //  }
 
         if (driver == null) {
             Logger logger = Logger.getLogger("");

@@ -25,6 +25,7 @@ public class POM_04 extends Events {
     public WebElement Name;
     @FindBy(css = "ms-dialog-content input[data-placeholder='Code']")
     public WebElement Code;
+
     @FindBy(xpath = "//ms-save-button/button")
     public WebElement SaveBtn;
     @FindBy(css = "ms-edit-button[class='ng-star-inserted']")
@@ -33,8 +34,9 @@ public class POM_04 extends Events {
     public WebElement successMessage;
     @FindBy(xpath = "//mat-form-field//input[@data-placeholder='Name']")
     public WebElement searchInput;
+
     @FindBy(xpath = "//ms-search-button//button")
-    public WebElement searchButton;
+    public WebElement searchNameBtn;
     @FindBy(xpath = "(//ms-delete-button//button)[1]")
     public WebElement deleteImageBtn;
     @FindBy(xpath = "//button [@type='submit']")
@@ -42,7 +44,7 @@ public class POM_04 extends Events {
 
     public void deleteItem(String searchText) {
         mySendKeys(searchInput, searchText);
-        myClick(searchButton);
+        myClick(searchNameBtn);
         wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"), 0));
         myClick(deleteImageBtn);
         myClick(deleteDialogBtn);

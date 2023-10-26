@@ -2,7 +2,11 @@
 package StepDefinitons;
 
 import Pages.POM_04;
+import Utilities.WBA;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+
 
 public class _04_AddingNewFieldsToAdminPanel extends POM_04 {
 
@@ -25,6 +29,9 @@ public class _04_AddingNewFieldsToAdminPanel extends POM_04 {
 
     @And("edit a Field")
     public void edit_a_field() {
+
+        lc.mySendKeys(lc.searchInput,"Nord Europa");
+        lc.myClick(lc.searchNameBtn);
         lc.myClick(lc.EditBtn);
         lc.mySendKeys(lc.Name, "East Europa");
         lc.myClick(lc.SaveBtn);
@@ -32,7 +39,7 @@ public class _04_AddingNewFieldsToAdminPanel extends POM_04 {
 
     @Then("delete a Field")
     public void delete_a_field() {
-        lc.deleteItem("East Europa");
+       lc.deleteItem("East Europa");
 
     }
 

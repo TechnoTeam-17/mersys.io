@@ -7,9 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 
 @CucumberOptions(
-       tags = "@SmokeTest,@Regression",
-       features = {"src/test/java/FeatureFiles/_00_Login.feature"},
-       glue = {"StepDefinitions"},
+      tags = "@SmokeTest,@Regression",
+     features = {"src/test/java/FeatureFiles/_00_Login.feature"},
+      glue = {"StepDefinitions"},
        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class _00_LoginRunner extends AbstractTestNGCucumberTests{
